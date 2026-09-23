@@ -52,7 +52,7 @@ permissions:
   id-token: write          # mint the GitHub OIDC token WIF exchanges for GCP creds
 
 env:
-  # Scoped scan target. Kept well under cm's ~10 MB per-scan upload limit and
+  # Scoped scannned target. Kept well under cm's ~10 MB per-scan upload limit and
   # contains the canonical CRITICAL finding (SQL injection in routes/login.ts).
   SCAN_PATH: routes
   # The `cm` binary ships vendored in the repo, so template copies work with
